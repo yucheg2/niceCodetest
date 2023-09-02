@@ -14,7 +14,6 @@ const PatientSelector = ({
     handleAllCheck: () => void;
     allChecked: number;
 }) => {
-    console.log(allChecked);
     return (
         <div className="patientSelector">
             <div
