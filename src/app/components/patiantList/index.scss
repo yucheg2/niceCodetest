@@ -1,0 +1,82 @@
+.patientList {
+    &__serchInput {
+        position: relative;
+        display: flex;
+        background-color: #ffffff;
+        align-items: center;
+        width: 351px;
+        height: 40px;
+        border-radius: 5px;
+        box-shadow: 0px 1px 4px 0px #1313131a;
+        padding: 10px;
+        padding-left: 5px;
+
+        .serch {
+            display: flex;
+            align-items: center;
+            position: relative;
+            flex-grow: 1;
+            margin-top: 3px;
+            padding-left: 5px;
+            transition: 300ms ease-out;
+            .border {
+                transition: 300ms ease-out;
+
+                height: 40px;
+                position: absolute;
+                left: 0px;
+            }
+
+            input {
+                border: none;
+                border-radius: 50px;
+                width: 0;
+                height: 30px;
+                outline: none;
+                transition: 300ms ease-out;
+                &:focus {
+                    width: 250px;
+                }
+                z-index: 1;
+            }
+            label {
+                z-index: 1;
+            }
+        }
+        .serchButton {
+            cursor: pointer;
+            background-color: #f1f2f3;
+            width: 34px;
+            height: 34px;
+            border: 0;
+            border-radius: 50%;
+            transition: ease-out 300ms;
+            padding-left: 5px;
+            &.active {
+                background-color: white;
+            }
+            path {
+                transition: ease-out 300ms;
+            }
+            svg {
+                transition: ease-out 300ms;
+            }
+            &:active {
+                background-color: #4198c5;
+                path {
+                    fill: white;
+                }
+            }
+        }
+        .addButton {
+            @extend .serchButton;
+            padding-top: 5px;
+            z-index: 1;
+        }
+        .filterButton {
+            @extend .serchButton;
+            position: absolute;
+            padding-top: 3px;
+        }
+    }
+}

@@ -1,0 +1,78 @@
+.consultPage__item {
+    box-sizing: border-box;
+    cursor: pointer;
+    width: 724px;
+    height: 66px;
+    display: flex;
+    padding-left: 10px;
+    padding-top: 13px;
+    padding-bottom: 5px;
+    padding-right: 11px;
+    margin-top: 10px;
+    box-shadow: 0px 0px 4px 0px #2f2f2f13;
+    border: 1px solid #cdcdcd;
+    border-radius: 4px;
+    transition: 300ms ease-out;
+
+    path {
+        transition: 300ms ease-out;
+    }
+    .icon {
+        transition: 300ms ease-out;
+
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: #f1f2f3;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 10px;
+    }
+    .info {
+        display: flex;
+        flex-direction: column;
+
+        flex-grow: 1;
+        .type {
+            width: 144px;
+            height: 16px;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 16px;
+            letter-spacing: 0px;
+            text-align: left;
+            margin-bottom: 10px;
+        }
+        .date {
+            width: 150px;
+            height: 17px;
+            color: #616f82;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 17px;
+            letter-spacing: 0px;
+            text-align: left;
+        }
+    }
+    .warning {
+        align-self: flex-end;
+        width: 112px;
+        height: 20px;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 20px;
+        letter-spacing: 0px;
+        text-align: right;
+        color: #ff0000;
+    }
+    &.active {
+        .icon {
+            background-color: #4198c5;
+        }
+        border-color: #4198c5;
+        path {
+            fill: white;
+        }
+    }
+}

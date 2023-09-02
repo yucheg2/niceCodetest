@@ -1,0 +1,70 @@
+.patientSelector {
+    margin: 15px 15px 10px 15px;
+    display: flex;
+    position: relative;
+    width: 366px;
+    height: 20px;
+    align-items: center;
+    overflow: hidden;
+    &__selectActions {
+        transition: 300ms ease-out;
+        position: absolute;
+        display: flex;
+        right: -90px;
+    }
+    &__number {
+        box-sizing: border-box;
+        font-family: "SF Pro Display";
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 14px;
+        letter-spacing: 0px;
+        justify-content: center;
+        text-align: center;
+        color: white;
+        transition: 300ms ease-out;
+
+        border-radius: 10px;
+        padding: 2px;
+        width: 28px;
+        height: 18px;
+    }
+    &__select {
+        transition: 300ms ease-out;
+
+        color: #616f82;
+        margin-right: 15px;
+        cursor: pointer;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 20px;
+        letter-spacing: 0px;
+    }
+    &__act {
+        @extend .patientSelector__select;
+    }
+    &__cancel {
+        @extend .patientSelector__select;
+    }
+
+    &__checkbox {
+        display: flex;
+        align-items: center;
+        position: absolute;
+        transition: 300ms ease-out;
+
+        div {
+            display: flex;
+            align-items: center;
+        }
+        input {
+            display: none;
+        }
+        label {
+            padding-top: 5px;
+            @extend .patientSelector__select;
+            text-align: center;
+            margin-right: 10px;
+        }
+    }
+}

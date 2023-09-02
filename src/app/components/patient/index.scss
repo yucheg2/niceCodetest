@@ -1,0 +1,37 @@
+.pacient {
+    box-sizing: border-box;
+    width: 744px;
+    height: 110px;
+    padding: 10px;
+    background-color: #ffff;
+    box-shadow: 0px 1px 4px 0px #1e1e1e1a;
+    display: flex;
+    border-radius: 5px;
+
+    &__avatar {
+        width: 90px;
+        height: 90px;
+        margin-right: 14px;
+        border-radius: 50%;
+        overflow: hidden;
+    }
+
+    &__info {
+        flex-grow: 1;
+    }
+    &__name {
+        width: 175px;
+        height: 20px;
+        font-weight: 400;
+        margin-top: 5px;
+        font-size: 16px;
+        line-height: 20px;
+    }
+    &__age {
+        font-family: SF Pro Display;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 14px;
+        letter-spacing: 0px;
+    }
+}

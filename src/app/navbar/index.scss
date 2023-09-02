@@ -1,0 +1,72 @@
+.navbar {
+    display: flex;
+    margin: 10px 20px 10px 10px;
+    justify-content: space-between;
+    nav {
+        color: #616f82;
+        display: flex;
+        div {
+            margin: 0 8px;
+        }
+    }
+    &__link {
+        color: #616f82;
+        text-decoration: none;
+        cursor: pointer;
+
+        &.active {
+            color: #4198c5;
+        }
+    }
+
+    &__addButton {
+        box-sizing: border-box;
+        display: flex;
+
+        justify-content: end;
+        width: 138px;
+        height: 26px;
+        div {
+            @extend .navbar__link;
+            box-sizing: content-box;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 17px;
+            letter-spacing: 0px;
+            text-align: right;
+            padding-top: 6px;
+            cursor: auto;
+            width: 92px;
+            height: 17px;
+
+            margin-right: 10px;
+        }
+        .addButton {
+            cursor: pointer;
+            background-color: #f1f2f3;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 26px;
+            height: 26px;
+            border: 1.08px solid #616f82;
+            border-radius: 50%;
+            transition: ease-out 300ms;
+            &.active {
+                background-color: white;
+            }
+            path {
+                transition: ease-out 300ms;
+            }
+            svg {
+                transition: ease-out 300ms;
+            }
+            &:active {
+                background-color: #4198c5;
+                path {
+                    fill: white;
+                }
+            }
+        }
+    }
+}
