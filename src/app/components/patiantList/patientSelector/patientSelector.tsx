@@ -88,7 +88,7 @@ const PatientSelector = ({
                             backgroundColor: selectMode ? "#4198C5" : "#616f82",
                         }}
                     >
-                        {patientLength}
+                        {allChecked ? 213 : patientLength}
                     </div>
                 </div>
             </div>

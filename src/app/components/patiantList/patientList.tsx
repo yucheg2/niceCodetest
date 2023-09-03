@@ -130,7 +130,7 @@ const PatientList = () => {
                               }
                               return acc;
                           }, 0)
-                        : mock.length
+                        : 213
                 }
             />
             {mock.map((user, id) => {
