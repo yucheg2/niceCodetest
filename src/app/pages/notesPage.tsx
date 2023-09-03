@@ -1,6 +1,7 @@
 import * as React from "react";
 import PageLayout from "../layouts/pageLayout";
 import DropDownButton from "../components/dropDown/dropDownBtn";
+import DropDown from "../components/dropDown/dropDown";
 
 const NotesPage = () => {
     return (
@@ -15,7 +16,9 @@ const NotesPage = () => {
                         ускоряет замещение различных посттравматических дефектов
                         в самих мышцах, костной ткани, связках и сухожилиях.
                     </p>
-                    <DropDownButton />
+                    <div>
+                        <DropDown />
+                    </div>
                 </div>
                 <div className="notesPage__secondNode">
                     <div>
@@ -25,7 +28,9 @@ const NotesPage = () => {
                             посттравматических дефектов в самих мышцах, костной
                             ткани, связках и сухожилиях.
                         </p>
-                        <DropDownButton />
+                        <div>
+                            <DropDown />
+                        </div>
                     </div>
                     <div className="notesPage__map">
                         <img src="/img/posts/Rectangle 101.png" alt="map" />
